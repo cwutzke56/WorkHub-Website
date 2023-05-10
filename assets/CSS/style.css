@@ -1,0 +1,56 @@
+/*apply style to body*/
+body{
+    color:chartreuse;
+/*I just went with a basic font family*/
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: antiquewhite;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+/*apply style to my header*/
+
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 35px;
+    background-color:black;
+    
+}
+
+/*need to change h1 but only in the header*/
+
+header h1{
+    font-size: 200%;
+    font-weight: 900;
+    color:darkgoldenrod;
+    margin: 0;
+}
+
+/*time to change all of nav in the header*/
+
+header nav{
+    min-width: 300px;
+    margin: 8px 0;
+}
+
+header nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav a{
+    color:darkgoldenrod;
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: 2px solid;
+    padding-bottom: 2px;
+}
+/*makes the nav bar illumate when hoved above*/
+header nav a:hover{
+    box-shadow: inset 0px 0px 8px  #2aefcb, 0 0 15px  #2aefcb;
+  }
