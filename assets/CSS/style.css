@@ -58,9 +58,10 @@ header nav a:hover{
 .dinosaur{
     height: 400px;
     background-image: url(../photos/DINOSAUR.jpg);
-    background-size:cover;
+    background-size: cover;
     background-position: center;
-    display: flex;justify-content: flex-end;
+    display: flex;
+    justify-content: flex-end;
     position: relative;
 }
 
@@ -81,9 +82,9 @@ header nav a:hover{
     background-color: aliceblue;
 }
 
-
+/*commonSection is the basic format of title to the side, juicy content to the left*/
 .commonSection{
-  display: flex;
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     padding: 20px;
@@ -106,4 +107,78 @@ header nav a:hover{
     flex-basis: 25%;
 }
 
+/*box is the box look through the other classes*/
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 66%;
+}
 
+.surfReport{
+    position: relative;
+    margin: 12px;
+    width: fit-content;
+    background-image: url(./assets/photos/shark_bite_surfboard_desk_1.webp);
+}
+
+.ledWall{
+    position: relative;
+    margin: 12px;
+    width: fit-content;
+}
+
+.calculator{
+    position: relative;
+    margin: 12px;
+    width: fit-content;
+}
+
+.pastelPuzzle{
+    position: relative;
+    margin: 12px;
+    width: fit-content;
+}
+
+.runBuddy{
+    position: relative;
+    margin: 12px;
+    width: fit-content;
+}
+img{
+    border: 5px solid;
+}
+
+/*contact portion styling*/
+.contact{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: 10px;}
+    
+.contact-style{
+        margin: 20px auto;
+        padding-bottom: 50px;
+        width: 100%;
+        display: flex;
+}
+.contact-style ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+.contact-style a{
+    diplay: block;
+    padding: 10px 30px;
+}
+.contact-title{
+    font-size: 48px;
+    display: inline-block;
+    border-right: 5px solid;
+    margin-right: 35px;
+    text-align: right;
+    padding: 30px;
+    flex-basis: 25%;
+}
