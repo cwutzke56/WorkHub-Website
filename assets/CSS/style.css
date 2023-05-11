@@ -195,7 +195,7 @@ img{
     padding: 30px;
     flex-basis: 25%;
 }
-
+/*media quir for resizing of screens*/
 @media screen and (max-width: 980px) {
     header {
       padding-bottom: 0;
