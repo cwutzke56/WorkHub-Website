@@ -47,8 +47,9 @@ header nav a{
     color:darkgoldenrod;
     font-weight: 500;
     text-decoration: none;
-    border-bottom: 2px solid;
     padding-bottom: 2px;
+    display: block;
+    padding: 10px 30px;
 }
 /*makes the nav bar illumate when hoved above*/
 header nav a:hover{
@@ -109,42 +110,50 @@ header nav a:hover{
 
 /*box is the box look through the other classes*/
 .box{
-    display: flex;
-    flex-wrap: wrap;
-    flex: 0 0 66%;
-}
+  flex: 1;
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;}
 
-.surfReport{
-    position: relative;
-    margin: 12px;
-    width: fit-content;
-    background-image: url(./assets/photos/shark_bite_surfboard_desk_1.webp);
+.workReference01{
+    
+    border-width: 1px;
+    border-radius: 50px;
+    padding: 10px;
+    flex: 2 0 300px;
+    margin: 20px;
+  }
+.workReference01 header{
+    border-radius: 50px 50px;
+    padding: 20px;
+    top:-20px;
+    color: black;
+    background-color: darkgoldenrod;
 }
+.workReference01:hover{
+    box-shadow: inset 0px 0px 8px  #2aefcb, 0 0 15px  #2aefcb;
+}
+.workReference02{
+   
+    border-width: 1px;
+    border-radius: 50px;
+    padding: 10px;
+    flex: 0 0 300px;
+    margin: 20px;}
 
-.ledWall{
-    position: relative;
-    margin: 12px;
-    width: fit-content;
-}
-
-.calculator{
-    position: relative;
-    margin: 12px;
-    width: fit-content;
-}
-
-.pastelPuzzle{
-    position: relative;
-    margin: 12px;
-    width: fit-content;
-}
-
-.runBuddy{
-    position: relative;
-    margin: 12px;
-    width: fit-content;
-}
+    .workReference02 header{
+        border-radius: 50px 50px;
+        padding: 20px;
+        top:-20px;
+        color: black;
+        background-color: darkgoldenrod;
+    }
+    .workReference02:hover{
+        box-shadow: inset 0px 0px 8px  #2aefcb, 0 0 15px  #2aefcb;
+    }
 img{
+    width: 100%;
     border: 5px solid;
 }
 
@@ -170,8 +179,12 @@ img{
     list-style: none;
 }
 .contact-style a{
-    diplay: block;
+    display: block;
     padding: 10px 30px;
+}
+
+.contact-style a:hover{
+    box-shadow: inset 0px 0px 8px  #2aefcb, 0 0 15px  #2aefcb;
 }
 .contact-title{
     font-size: 48px;
@@ -181,4 +194,74 @@ img{
     text-align: right;
     padding: 30px;
     flex-basis: 25%;
+}
+
+@media screen and (max-width: 980px) {
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
+      flex-direction: column;
+      text-align: center;
+    }
+    header h1 {
+      width: 100%;
+      text-align: center;
+      margin: 5px
+    }
+    header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+    header nav ul li a {
+      font-size: 20px;
+    }
+    p {
+        flex: 2 100%;
+        text-align: left;
+        justify-content: left;
+    }
+}
+@media screen and (max-width: 768px) {
+    .commonSection {
+      padding: 30px 15px;
+      text-align: center;
+    }
+    .commonSection_style {
+        flex-direction: column;
+    }
+    .commonSection_title {
+        font-size: 48px;
+        text-align: center;
+        flex-direction: column;
+        border-bottom: 5px solid;
+        border-right: none;
+        padding: 15px;
+        margin: 0;
+    }
+    p {
+        flex-direction: column;
+        justify-content: center;
+        display: contents;
+        padding: 10px
+    }
+    .selfie {
+        justify-content: center;
+    }
+ .contact-style{
+    flex-direction: column;
+ }
+ .contact-title{
+    font-size: 48px;
+    text-align: center;
+    flex-direction: column;
+    border-bottom: 5px solid;
+    border-right: none;
+    padding: 15px;
+    margin: 0;
+ }
+ .contact-style a{
+    padding: 50px 5px;
+ }
 }
